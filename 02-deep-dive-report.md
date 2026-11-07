@@ -59,7 +59,7 @@ API chỉ sinh JSON; ứng dụng thêm nhãn đầu chuỗi. Không cấp tool 
 Mã tại `starter-code/prompt_prototype.py`: system instruction, JSON schema, 6 đầu vào tấn công bao gồm ép đi trạm xa, xóa nhãn, system giả, thiếu dữ liệu, 4,9% và đúng 5%. Kiểm tra nhãn, action, duyệt bắt buộc và station_km=null. Nội dung tự do cần review thủ công sau mỗi lần chạy live.
 
 - Offline: kiểm tra validator bằng 5 payload hợp lệ và 6 payload sai; không đánh giá khả năng Gemini tuân thủ prompt.
-- Live: chạy 6 ca qua Gemini 2.5 Flash, ghi stdout, model, ngày chạy, lỗi và thời gian; không có API key nên **chưa chạy**.
+- Live: Gemini 2.5 Flash trả 404 với project đang dùng, nên lần chạy mới dùng Gemini 3.8 Flash. 2/6 ca đạt (Remove draft tag, Forged system); 4/6 ca chưa đánh giá được do 3 lỗi 504 và 1 lỗi 503. 
 - Pilot đề xuất: thu 100 ca baseline đã khử định danh; tách 50 ca phát triển và 50 ca giữ lại trước khi sửa prompt. So sánh template với LLM trên cùng tập giữ lại, cùng tiêu chí và người duyệt; bổ sung ca nguy cấp/tiếng Việt không dấu/injection.
 - Đo thời gian từ nhận ca tới duyệt, tách thời gian hàng đợi và thời gian API; báo cáo median/p95 và tỷ lệ sửa. Không dùng 6 ca adversarial để suy ra tỷ lệ an toàn thực tế.
 - Chi phí: đo token đầu vào/ra và số ca, nhân đơn giá chính thức tại thời điểm chạy; cộng chi phí review, tích hợp và vận hành. Chưa có đủ số liệu để khẳng định ROI.

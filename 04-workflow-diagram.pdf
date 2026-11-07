@@ -1,0 +1,56 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1525 >>
+stream
+BT /F1 20 Tf 45 790 Td (Xanh SM - Current-State Workflow) Tj ET
+BT /F1 11 Tf 45 763 Td (Lab assumptions only - not measured operational data) Tj ET
+0.89 0.94 0.99 rg
+45 665 505 80 re f 0.15 0.2 0.3 RG 45 665 505 80 re S
+0 0 0 rg BT /F1 12 Tf 60 715 Td (1. DRIVER -> DISPATCHER: receive chat) Tj ET
+BT /F1 10 Tf 60 690 Td (1 minute | H1: missing battery / location) Tj ET
+295 665 m 295 615 l S 289 623 m 295 615 l 301 623 l S
+0.89 0.94 0.99 rg
+45 535 505 80 re f 0.15 0.2 0.3 RG 45 535 505 80 re S
+0 0 0 rg BT /F1 12 Tf 60 585 Td (2. DISPATCHER: verify battery and location) Tj ET
+BT /F1 10 Tf 60 560 Td (2 minutes | H2: chat -> telemetry / map) Tj ET
+295 535 m 295 485 l S 289 493 m 295 485 l 301 493 l S
+0.99 0.89 0.87 rg
+45 405 505 80 re f 0.15 0.2 0.3 RG 45 405 505 80 re S
+0 0 0 rg BT /F1 12 Tf 60 455 Td (3. BOTTLENECK: lookup and draft response) Tj ET
+BT /F1 10 Tf 60 430 Td (4 minutes | multiple sources; missed battery threshold) Tj ET
+295 405 m 295 355 l S 289 363 m 295 355 l 301 363 l S
+0.89 0.94 0.99 rg
+45 275 505 80 re f 0.15 0.2 0.3 RG 45 275 505 80 re S
+0 0 0 rg BT /F1 12 Tf 60 325 Td (4. SUPERVISOR -> DISPATCHER -> DRIVER) Tj ET
+BT /F1 10 Tf 60 300 Td (1 minute | H3: approve first, then send manually) Tj ET
+BT /F1 13 Tf 45 220 Td (TOTAL: 8 minutes / case - queue time excluded) Tj ET
+BT /F1 11 Tf 45 195 Td (H1 / H2 / H3 = handoffs between actors or systems) Tj ET
+BT /F1 11 Tf 45 174 Td (Red box = bottleneck: 4 of 8 minutes) Tj ET
+BT /F1 10 Tf 45 140 Td (Companion report: 02-deep-dive-report.md) Tj ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1888
+%%EOF
